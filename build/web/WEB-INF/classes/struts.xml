@@ -6,5 +6,18 @@
     <include file="example.xml"/>
     <!-- Configuration for the default package. -->
     <package name="default" extends="struts-default">
+    
+    <action name="gotoCrud" class="action.CRUD" method="gotoCrud">
+        <result name="success">CRUD.jsp</result>  
+    </action>
+    <action name="editusuario" class="action.CRUD" method="editusuario">
+        <result name="success">CRUD.jsp</result>  
+    </action>
+    <action name="deleteusuario" class="action.CRUD" method="deleteUsuario">
+        <result name="success">CRUD.jsp</result>  
+    </action>
+    <action name="SaveOrUpdate" class="action.CRUD" method="SaveOrUpdate">
+        <result name="success">CRUD.jsp</result>  
+    </action>
     </package>
 </struts>
